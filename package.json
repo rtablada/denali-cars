@@ -13,6 +13,7 @@
     "bluebird": "^3.4.6",
     "denali": "0.0.21",
     "denali-cli": "0.0.x",
+    "denali-typescript": "^0.0.3",
     "lodash": "^4.0.0"
   },
   "devDependencies": {
