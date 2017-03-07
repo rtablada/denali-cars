@@ -1,4 +1,6 @@
 import { Action } from 'denali';
 
-export default class ApplicationAction extends Action {
+abstract class ApplicationAction extends Action {
 }
+
+export default ApplicationAction;
