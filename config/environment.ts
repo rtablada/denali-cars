@@ -23,7 +23,7 @@ export default function environmentConfig(environment: string) {
   }
 
   if (environment === 'production') {
-    config.database.connection = process.env.DATABASE_URL;
+    config.database.connection = config.migrations.db.connection = process.env.DATABASE_URL;
 
     // == SSL
     //
