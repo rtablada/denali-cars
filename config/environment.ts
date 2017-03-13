@@ -1,23 +1,21 @@
 export default function environmentConfig(environment: string) {
-  let config = {
+  let config: any = {
     server: {
       port: process.env.PORT || 3000
     },
-    // == Migrations
-    //
-    // If you are planning on using migrations with your database, uncomment this
-    // section and provide the relevant database driver and connection details
-    //
-    // migrations: {
-    //   db: {
-    //     client: 'pg',
-    //     connection: {}
-    //   }
-    // },
-    ormAdapter: 'memory',
+    ormAdapter: 'objection',
     database: {
-
+      client: 'pg',
+      connection: {
+        host: 'localhost',
+        user: 'daw',
+        database: 'ascent_development'
+      }
     }
+  };
+
+  config.migrations = {
+    db: config.database
   };
 
   if (environment === 'development') {

@@ -2,7 +2,10 @@ import ApplicationSerializer from './application';
 
 export default class PostSerializer extends ApplicationSerializer {
 
-  attributes: string[] = [];
+  attributes = [
+    'title',
+    'body'
+  ];
 
   relationships = {};
 

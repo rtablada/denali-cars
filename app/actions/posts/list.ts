@@ -4,7 +4,7 @@ export default class ListPosts extends ApplicationAction {
 
   async respond() {
     let Post = this.modelFor('post');
-    return Post.find();
+    return Post.all();
   }
 
 }
