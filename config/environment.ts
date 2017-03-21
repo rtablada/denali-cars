@@ -8,8 +8,8 @@ export default function environmentConfig(environment: string) {
       client: 'pg',
       connection: {
         host: 'localhost',
-        user: 'daw',
-        database: 'ascent_development'
+        user: 'ryan',
+        database: 'razer-cars'
       }
     }
   };
